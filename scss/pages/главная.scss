@@ -1,0 +1,177 @@
+@import "../base/global";
+
+.header__img {
+  padding-top: 20px;
+}
+nav {
+  position: fixed;
+  z-index: 3;
+  background-color: #fff;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: #fbf8ec;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 150px;
+  border-radius: 4px;
+  border: 1px solid #70c05b;
+  background: #fff;
+  color: #8f8f8f;
+}
+
+.form__img {
+  margin-left: -50px;
+  margin-bottom: -8px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wrapp1__Sentence {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 8px;
+  color: #414141;
+}
+
+.wrapp1__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper__main {
+  width: 65px;
+  text-align: center;
+}
+
+.first__wrapper {
+  max-width: 460px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding-top: 10px;
+  display: grid;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.header__end-sentence {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #232323;
+}
+
+.header__end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__end-sentence {
+    display: none;
+  }
+
+  .end__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header__end-img {
+    display: none;
+  }
+  .first__wrapper {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+}
+
+#hero {
+  background-image: url(../../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+
+.hero__img {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.hero__sentence {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #414141;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+@media screen and (max-width: 1280px) {
+  .hero__container {
+    flex-direction: column;
+  }
+}
+
+//cards
+
+#card{
+  padding-top: 80px;
+}
+
+.card__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #414141;
+}
+
+.card__sentence {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #606060;
+}
+
+.card__header2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card__header {
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
