@@ -642,7 +642,7 @@ body {
 }
 
 .map__btn:hover {
-  background-color: #70C05B;
+  background-color: #70c05b;
   color: #fff;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -650,4 +650,29 @@ body {
 
 .map__btns {
   margin-bottom: 24px;
+}
+
+.map {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    max-width: 737px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .map {
+    max-width: 690px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .map {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .map {
+    max-width: 400px;
+  }
 }/*# sourceMappingURL=главная.css.map */
