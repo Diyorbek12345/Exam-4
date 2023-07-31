@@ -782,7 +782,6 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
-  margin-left: 40px;
   color: #414141;
 }
 
@@ -794,6 +793,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
+}
+
+.footer__link {
+  margin-left: 40px;
 }
 
 .section2__images .img {
@@ -840,15 +843,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
-}
-
-.linkers__wrspper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer__container {
