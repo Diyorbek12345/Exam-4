@@ -59,6 +59,113 @@ body {
   background: #fbf8ec;
 }
 
+.katalog__btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #fff;
+}
+
+.wrapper {
+  background: #70c05b;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.dropdown1__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 24px;
+  color: #414141;
+}
+
+.dropdown1__link:hover {
+  color: #f63;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dropdown2__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 24px;
+  color: #414141;
+}
+
+.dropdown2__link:hover {
+  color: #f63;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dropdown3__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 24px;
+  color: #414141;
+}
+
+.dropdown3__link:hover {
+  color: #f63;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dropdown4__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 24px;
+  color: #414141;
+}
+
+.dropdown4__link:hover {
+  color: #f63;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dropdown {
+  max-width: 100%;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.helper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,6 +265,11 @@ body {
   .end__img {
     display: none;
   }
+  .dropdown__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 }
 @media screen and (max-width: 900px) {
   .header__end-img {
@@ -181,6 +293,11 @@ body {
   }
   .input {
     max-width: 230px;
+  }
+  .dropdown__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
   }
 }
 @media screen and (max-width: 500px) {
