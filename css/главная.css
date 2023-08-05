@@ -47,7 +47,8 @@ input:focus {
 
 #header {
   position: fixed;
-  position: relative;
+  left: 0;
+  right: 0;
   z-index: 3;
   max-width: 100%;
   background-color: #fff;
@@ -916,6 +917,15 @@ body {
   margin-left: 40px;
 }
 
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .section2__images .img {
   margin-left: 16px;
 }
@@ -969,7 +979,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 135px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section2__images {

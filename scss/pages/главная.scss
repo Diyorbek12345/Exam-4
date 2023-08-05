@@ -5,7 +5,8 @@
 }
 #header {
   position: fixed;
-  position: relative;
+  left: 0;
+  right: 0;
   z-index: 3;
   max-width: 100%;
   background-color: #fff;
@@ -786,6 +787,7 @@ body {
     row-gap: 40px;
   }
 }
+
 //footer
 
 #footer {
@@ -810,6 +812,11 @@ body {
 
 .footer__link {
   margin-left: 40px;
+}
+
+.footer__links{
+  display: flex;
+  align-items: center;
 }
 
 .section2__images .img {
@@ -849,7 +856,7 @@ body {
 .footer__container {
   display: flex;
   align-items: center;
-  gap: 135px;
+  justify-content: space-between;
 }
 
 .section2__images {
