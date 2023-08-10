@@ -58,7 +58,7 @@
             <div class="wrapper__main">
               <a class="wrapp1" href="./корзина.html">
                 <div class="wrapp1__img">
-                  <img src="./img/header3.png" alt="wrapp__img" />
+              <img src="./icons/shopping-cart.png" alt="wrapp__img">
                 </div>
                 <p class="wrapp1__Sentence">Корзина</p>
               </a>
@@ -75,7 +75,7 @@
           </div>
         </div>
       </nav>
-      <div class="dropdown">
+      <div class="dropdown hidden">
         <div class="dropdown__wrapper container">
           <div class="dropdown1">
             <a class="dropdown1__link" href="./категоря.html"
@@ -123,8 +123,8 @@
           </div>
         </div>
       </div>
-    </header>
-    <main>
+    </header> 
+    <!-- <main>
       <h2 class="container hero__title">Все продукты</h2>
       <section id="cards">
         <div class="container cards__container">
@@ -308,7 +308,12 @@
           </div>
         </div>
       </section>
-    </main>
+    </main> -->
+    <div class="container">
+      <input type="text" class="search__input" placeholder="search products...">
+      <p class="counter">Число всех продуктов: <span class="products__count">0</span></p>
+    </div>
+    <div class="product-row container"></div>
     <footer id="footer">
       <div class="container footer__container">
         <div class="footer__section1">
@@ -378,6 +383,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/products-data.js"></script>
+    <script src="js/products.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

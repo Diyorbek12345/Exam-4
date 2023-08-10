@@ -1,6 +1,5 @@
-const statyaCards = document.querySelectorAll(".statya__card__wrapper");
 const productcards1 = document.querySelectorAll(".cards");
-// console.log(productCard);
+// console.log(productcards1);
 function getProductCard(product) {
   const productCard = document.createElement("div");
   productCard.className = "product-card";
@@ -39,32 +38,32 @@ function getProductCard(product) {
   const productBtn = document.createElement("a");
   productBtn.innerHTML = "В корзину";
   productBtn.className = "cards_btn";
-  productBtn.href =   `категоря.html?category=${product.category}`
-  console.log(product.category);
 
   productCardFooter.prepend(productBtn);
   productCardFooter.prepend(productPrice);
   productCardFooter.prepend(productTitle);
 
   productCard.append(productCardBody, productCardFooter);
-  // console.log(productCard);
+  console.log(productCard);
   return productCard;
 }
 
-products.slice(3, 7).map((product) => {
+products.slice(22, 26).map((product) => {
   let card = getProductCard(product);
   let card__copy1 = card.cloneNode(true);
+  // let card__copy2 = card.cloneNode(true);
+  // let card__copy3 = card.cloneNode(true);
   productcards1[0].append(card__copy1);
+  // productcards1[1].append(card__copy2);
+  // productcards1[2].append(card__copy3);
 });
 
-products.slice(16, 20).map((product) => {
+products.slice(32, 36).map((product) => {
   let card = getProductCard(product);
+  // let card__copy1 = card.cloneNode(true);
   let card__copy2 = card.cloneNode(true);
+  // let card__copy3 = card.cloneNode(true);
+  // productcards1[0].append(card__copy1);
   productcards1[1].append(card__copy2);
-});
-
-products.slice(8, 12).map((product) => {
-  let card = getProductCard(product);
-  let card__copy3 = card.cloneNode(true);
-  productcards1[2].append(card__copy3);
+  // productcards1[2].append(card__copy3);
 });
