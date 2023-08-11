@@ -11,7 +11,7 @@
     <header id="header">
       <nav>
         <div class="container header__container">
-          <a class="header__logo" href="главная.html">
+          <a class="header__logo" href="main.html">
             <div class="header__img">
               <img src="./img/logo.png" alt="main-logo" />
             </div>
@@ -76,23 +76,19 @@
 
     <main>
       <section class="category">
-        <div class="container">
-          <div class="catalog__breadcrumbs">
+        <div class="container category__containeer">
+        <div class="wrapper1">
+            <div class="catalog__breadcrumbs">
             <a class="catalog__breadcrumb-link" href="./index.html">
-              Главная > 
+           Главная
             </a>
+             <span class="belgi">></span> 
  
-            <a class="catalog__breadcrumb-link" href="./catalog.html">
+            <a class="catalog__breadcrumb-link link" href="./категории.html">
               Каталог
             </a>
-            <span class="catalog__breadcrumb-separator">
-              <img
-                class="catalog__breadcrumb-icon"
-                src="./imgs/./svg/right-btn.svg"
-                alt="right"
-              />
-            </span>
-            <a class="catalog__breadcrumb-link" href="./basket.html">
+            <span class="belgi">></span>  
+            <a class="catalog__breadcrumb-links" href="./basket.html">
               Молоко, сыр, яйцо
             </a>
           </div>
@@ -100,8 +96,8 @@
           <button class="category__products-filt">Фильтр</button>
           <div class="category__content">
             <div class="category__filters">
-              <h3 class="category__subtitle">Фильтр</h3>
-              <div class="category__filter-group">
+
+              <div class="category__filter-group1">
                 <p class="category__filter-label">Цена</p>
                 <button class="category__filter-button">Очистить</button>
               </div>
@@ -120,10 +116,13 @@
               </div>
               <input class="category__filter-range" type="range" />
             </div>
-            <div class="category__products"></div>
           </div>
+        </div>
+          <div class="wrapper2">
+            <div class="category__products"></div>
           <div class="category__see">
             <button class="category__see-btn">Показать ещё</button>
+          </div>
           </div>
         </div>
       </section>

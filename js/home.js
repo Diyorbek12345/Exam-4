@@ -21,13 +21,19 @@ function getProductCard(product) {
   const productCardFooter = document.createElement("div");
   productCardFooter.className = "product-card-footer";
 
-  const productTitle = document.createElement("h3");
+  const productTitle = document.createElement("a");
   const productTitleText = document.createTextNode(product.name);
+    productTitle.href =   `категоря.html?category=${product.category}`
+    productTitle.style = `
+    color: black;
+    font-weight: 700;
+    `
 
   productTitle.appendChild(productTitleText);
 
   const productName = document.createElement("p");
   productName.innerHTML = `${product.name}`;
+
 
   const productPrice = document.createElement("p");
   productPrice.innerHTML = `${product.price}`;
@@ -39,8 +45,9 @@ function getProductCard(product) {
   const productBtn = document.createElement("a");
   productBtn.innerHTML = "В корзину";
   productBtn.className = "cards_btn";
-  productBtn.href =   `категоря.html?category=${product.category}`
-  console.log(product.category);
+  productBtn.href = "../корзина/html"
+  
+  // console.log(product.category);
 
   productCardFooter.prepend(productBtn);
   productCardFooter.prepend(productPrice);

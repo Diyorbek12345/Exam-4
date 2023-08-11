@@ -311,6 +311,146 @@ body {
     max-width: 160px;
   }
 }
+.catalog__breadcrumb-links {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: 16px;
+  color: #8f8f8f;
+}
+
+.catalog__breadcrumb-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-right: 16px;
+  color: #414141;
+}
+
+.catalog__breadcrumbs {
+  margin-bottom: 27px;
+  margin-top: 27px;
+}
+
+.category__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #414141;
+}
+
+.link {
+  margin-left: 16px;
+}
+
+.belgi {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #414141;
+}
+
+.category__products-filt {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 4px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding-right: 252px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: none;
+  background-color: #f3f2f1;
+  color: #414141;
+}
+
+.category__filter-label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000;
+}
+
+.category__filter-group1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 220px;
+}
+
+.category__filter-button {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  background: #f3f2f1;
+  color: #606060;
+}
+
+.category__filter-input {
+  max-width: 150px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 13px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 13px;
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+  color: #414141;
+}
+
+.category__see-btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: #f3f2f1;
+  border: none;
+  color: #606060;
+}
+
+.category__see {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.category__products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category__containeer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+}
+
+.wrapper1 {
+  padding-top: -200px;
+}
+
+.wrapper2 {
+  padding-top: 200px;
+}
+
 #footer {
   padding-top: 80px;
   background-image: url(../../img/footer__img.png);

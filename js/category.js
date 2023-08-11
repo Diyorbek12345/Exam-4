@@ -4,7 +4,7 @@ let categoryProducts = products.filter((pr) => pr.category == category);
 
 console.log(categoryProducts);
 
-const productcardS = document.querySelector(".category__products")
+const productcardS = document.querySelector(".category__products");
 
 function getProductCard(product) {
   const productCard = document.createElement("div");
@@ -35,18 +35,23 @@ function getProductCard(product) {
   productName.innerHTML = `${product.name}`;
 
   const productPrice = document.createElement("p");
-  productPrice.innerHTML = `${product.price}`;
+  productPrice.innerHTML = `${product.price} $`;
   productPrice.className = "cards_current__cost";
   productPrice.style = `
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   `;
 
   const productBtn = document.createElement("a");
   productBtn.innerHTML = "В корзину";
   productBtn.className = "cards_btn";
-  productBtn.href =   `категоря.html?category=${product.category}`
-  console.log(product.category);
-
+  productBtn.style = `
+  padding: 10px 20px;
+  border: 2px solid green;
+  color: green;
+  margin-top: 20px; 
+  `
+  productBtn.href = `категоря.html?category=${product.category}`;
   productCardFooter.prepend(productBtn);
   productCardFooter.prepend(productPrice);
   productCardFooter.prepend(productTitle);
@@ -58,6 +63,5 @@ function getProductCard(product) {
 
 categoryProducts.map((product) => {
   let card = getProductCard(product);
-
   productcardS.append(card);
 });
